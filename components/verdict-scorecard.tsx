@@ -89,13 +89,11 @@ export function VerdictScorecard({ scores, apps }: VerdictScorecardProps) {
                   <span className="text-sm text-muted-foreground">{val}/10</span>
                 </div>
                 <Slider
-                  defaultValue={[val]}
                   value={[val]}
                   max={10}
                   step={1}
-                  onValueChange={(v: any, v2?: any) => {
-                    const target = v2 !== undefined ? v2 : v;
-                    const num = Array.isArray(target) ? target[0] : target;
+                  onValueChange={(v: any) => {
+                    const num = Array.isArray(v) ? v[0] : v;
                     if (typeof num === 'number' && !isNaN(num)) {
                       setWeights(prev => ({ ...prev, [key]: num }));
                     }
