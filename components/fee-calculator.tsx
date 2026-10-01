@@ -55,13 +55,12 @@ export function FeeCalculator({ data, apps }: FeeCalculatorProps) {
             <span className="text-2xl font-bold">₹{cartValue}</span>
           </div>
           <Slider
-            defaultValue={[84]}
+            value={[cartValue]}
             max={500}
             min={50}
             step={1}
-            onValueChange={(val: any, val2?: any) => {
-              const target = val2 !== undefined ? val2 : val;
-              const num = Array.isArray(target) ? target[0] : target;
+            onValueChange={(val: any) => {
+              const num = Array.isArray(val) ? val[0] : val;
               if (typeof num === 'number' && !isNaN(num)) {
                 setCartValue(num);
               }
