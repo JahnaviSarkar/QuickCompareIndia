@@ -2,7 +2,7 @@
 
 **An editorial-style dashboard comparing India's four quick-commerce giants — Blinkit, Zepto, Swiggy Instamart, and Flipkart Minutes — using only real, publicly reported data.**
 
-🔗 **Live demo:** [quick-compare-india.vercel.app](https://quick-compare-india.vercel.app)
+**Live demo:** [quick-compare-india.vercel.app](https://quick-compare-india.vercel.app)
 
 ![Overview](./public/screenshots/overview.png)
 
@@ -115,5 +115,3 @@ MIT
 **Built by Jahnavi Sarkar** · [LinkedIn](https://linkedin.com/in/your-profile)
 
 ---
-
-**To attach your screenshots:** create a `public/screenshots/` folder in your project, drop your Overview, Verdict, and Fees PNGs in there with those exact filenames (`overview.png`, `verdict.png`, `fees.png`), then commit and push — they'll render inline on the GitHub repo page automatically.
