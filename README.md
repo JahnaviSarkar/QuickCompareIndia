@@ -112,6 +112,6 @@ MIT
 
 ---
 
-**Built by Jahnavi Sarkar** · [LinkedIn](https://linkedin.com/in/your-profile)
+**Built by Jahnavi Sarkar** · [LinkedIn](https://www.linkedin.com/in/jahnavi-sarkar/)
 
 ---
