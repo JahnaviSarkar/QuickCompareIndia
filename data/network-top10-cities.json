@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "title": "Dark stores across India's top 10 cities (CLSA mapping)",
+    "asOf": "2026-08",
+    "unit": "dark stores in the top 10 cities combined (not national totals)",
+    "note": "This is the only like-for-like store comparison across all five players. National totals differ (e.g. Blinkit has 2,443 stores nationally). CLSA also reported Blinkit has the most stores in 6 of the 10 cities and Zepto leads in the other 4, and that Flipkart Minutes moved ahead of Instamart on both store count and pincode coverage.",
+    "confidence": "high"
+  },
+  "rows": [
+    { "appId": "blinkit", "darkStoresTop10": 969 },
+    { "appId": "zepto", "darkStoresTop10": 828 },
+    { "appId": "flipkart_minutes", "darkStoresTop10": 627 },
+    { "appId": "instamart", "darkStoresTop10": 615 },
+    { "appId": "bigbasket", "name": "BigBasket (BB Now)", "darkStoresTop10": 497, "color": "#84C225", "note": "Tata-owned; included by CLSA, shown as a reference bar only" }
+  ],
+  "totalTop10": 3536,
+  "sources": [
+    { "id": "n1", "title": "Flipkart Minutes Overtakes Swiggy Instamart in Dark-Store Count Across Top 10 Cities", "publisher": "Indian Retailer", "date": "2026-08", "url": "https://www.indianretailer.com/news/flipkart-minutes-overtakes-swiggy-instamart-dark-store-count-across-top-10-cities" },
+    { "id": "n2", "title": "Flipkart Minutes races past Instamart in dark stores: CLSA", "publisher": "Storyboard18", "date": "2026-08", "url": "https://www.storyboard18.com/amp/digital/flipkart-minutes-overtakes-swiggy-instamart-in-dark-stores-ws-l-108835.htm" }
+  ]
+}

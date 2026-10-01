@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Consumer fee snapshot: Blinkit, Zepto, Instamart",
+    "asOf": "2025-11-03",
+    "staleWarning": "This is a NOVEMBER 2025 snapshot. Quick-commerce fees change often (a June 2026 report says platforms have kept raising fees). The UI must show the date on every fee chart and a 'verify in app' notice.",
+    "flipkartMinutes": "No public fee data found. Show 'Not available'.",
+    "confidence": "medium"
+  },
+  "small_order_under_99": [
+    { "appId": "zepto", "deliveryFee": 30, "smallCartFee": 0, "handlingFee": 0, "extraCharges": 30, "note": "Zepto dropped handling, surge and small-cart fees; free delivery above Rs 99" },
+    { "appId": "blinkit", "deliveryFee": 30, "smallCartFee": 20, "handlingFee": 4, "extraCharges": 54 },
+    { "appId": "instamart", "deliveryFee": 30, "smallCartFee": 15, "handlingFee": 9.8, "extraCharges": 54.8, "note": "One outlet quotes about Rs 65 including GST on fees; another about Rs 55 before GST" }
+  ],
+  "example_basket_84_rupees_total_paid": [
+    { "appId": "zepto", "totalPaid": 115.5, "note": "approx, includes GST on fees" },
+    { "appId": "blinkit", "totalPaid": 143, "note": "approx" },
+    { "appId": "instamart", "totalPaid": 154, "note": "approx" }
+  ],
+  "free_delivery_threshold": [
+    { "appId": "zepto", "thresholdRupees": 99 },
+    { "appId": "blinkit", "thresholdRupees": 199, "note": "Rs 30 delivery below Rs 199; handling fee Rs 4 to Rs 11 reported" },
+    { "appId": "instamart", "thresholdRupees": 199, "note": "Rs 30 delivery below Rs 199, reported Rs 16 above; waived for Swiggy One members; handling Rs 9.8" }
+  ],
+  "sources": [
+    { "id": "f1", "title": "Zepto scraps all handling, surge fees; how does it stack up against Instamart and Blinkit?", "publisher": "Upstox News", "date": "2025-11-03", "url": "https://upstox.com/news/business-news/latest-updates/zepto-scraps-all-handling-surge-fees-how-does-it-stack-up-against-instamart-and-blinkit/article-183964/" },
+    { "id": "f2", "title": "Zepto drops all fees, offers free delivery above Rs 99", "publisher": "BestMediaInfo", "date": "2025-11-03", "url": "https://bestmediainfo.com/mediainfo/mediainfo-digital/zepto-drops-all-fees-offers-free-delivery-above-rs-99-10618714" },
+    { "id": "f3", "title": "Blinkit, Zepto, Instamart raise fees as quick commerce goes mainstream", "publisher": "Storyboard18", "date": "2026-06-04", "url": "https://www.storyboard18.com/brand-marketing/blinkit-zepto-instamart-raise-fees-as-quick-commerce-goes-mainstream-ws-l-99758.htm" }
+  ]
+}

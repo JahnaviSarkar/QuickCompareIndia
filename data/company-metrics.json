@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "title": "QuickCompare India: company metrics",
+    "compiledOn": "2026-09-23",
+    "latestQuarter": "Q1 FY27 (Apr-Jun 2026)",
+    "currency": "INR",
+    "units": "Crore = 10 million. M = million. null = not publicly disclosed or not found.",
+    "notes": [
+      "All figures were compiled from public reporting of company filings (Eternal and Swiggy shareholder letters and earnings coverage, Zepto DRHP dated 8 June 2026) and press reports. Do not change values without a source.",
+      "Blinkit reports NOV (net order value); Instamart reports GOV and NOV; Zepto reports annual revenue and orders; Flipkart Minutes does not disclose financials. Metrics are therefore not perfectly like-for-like. Compare using fields with the same name and period only.",
+      "Blinkit Q1 FY27 NOV is 17,132 crore per BW Disrupt (consistent with +86% YoY and +19% QoQ). Business Standard's coverage printed 7,130, which looks like a typo.",
+      "Fields marked confidence 'medium' come from secondary summaries and should be checked against the company's own shareholder letter before you publish."
+    ]
+  },
+  "apps": [
+    { "id": "blinkit", "name": "Blinkit", "parent": "Eternal", "color": "#F8CB46", "disclosure": "Quarterly shareholder letter (listed company)" },
+    { "id": "zepto", "name": "Zepto", "parent": "Zepto Ltd (IPO filed, unlisted)", "color": "#7B2FBE", "disclosure": "DRHP filed 8 June 2026; annual figures" },
+    { "id": "instamart", "name": "Swiggy Instamart", "parent": "Swiggy", "color": "#FC8019", "disclosure": "Quarterly shareholder letter (listed company)" },
+    { "id": "flipkart_minutes", "name": "Flipkart Minutes", "parent": "Flipkart (Walmart)", "color": "#2874F0", "disclosure": "No financials; company statements and analyst estimates only" }
+  ],
+  "quarterly": [
+    {
+      "appId": "blinkit", "quarter": "Q1 FY26", "period": "Apr-Jun 2025",
+      "gov": 11821, "nov": 9203, "darkStores": 1544, "monthlyTransactingCustomersM": 16.9,
+      "adjEbitda": -162, "confidence": "high", "sources": ["s5", "s24", "s2"]
+    },
+    {
+      "appId": "blinkit", "quarter": "Q2 FY26", "period": "Jul-Sep 2025",
+      "darkStores": 1816, "adjEbitda": -156, "confidence": "medium",
+      "note": "Store count derived: Q3 FY26 stores (2,027) minus 211 net additions in Q3.", "sources": ["s8"]
+    },
+    {
+      "appId": "blinkit", "quarter": "Q3 FY26", "period": "Oct-Dec 2025",
+      "darkStores": 2027, "adjEbitda": 4, "novGrowthYoYPct": 121, "confidence": "high",
+      "note": "First quarter of positive adjusted EBITDA.", "sources": ["s8"]
+    },
+    {
+      "appId": "blinkit", "quarter": "Q4 FY26", "period": "Jan-Mar 2026",
+      "nov": 14386, "darkStores": 2243, "adjEbitda": 37, "monthlyTransactingCustomersM": 27.2,
+      "ordersM": 274, "netAov": 525, "confidence": "medium",
+      "note": "NOV, MTC and orders from a secondary summary; store count and EBITDA also reported by Entrackr and Business Standard.", "sources": ["s6", "s7", "s1"]
+    },
+    {
+      "appId": "blinkit", "quarter": "Q1 FY27", "period": "Apr-Jun 2026",
+      "nov": 17132, "novGrowthYoYPct": 86, "novGrowthQoQPct": 19, "darkStores": 2443, "netStoreAdditions": 200,
+      "adjEbitda": 102, "adjEbitdaPctNov": 0.6, "netAov": 518, "monthlyTransactingCustomersM": 31.8,
+      "ordersM": 331, "novPerStorePerDayLakh": 8.27, "ordersPerDayM_derived": 3.64,
+      "ordersPerDayMethod": "331M orders / 91 days",
+      "contributionMarginPctNov": 5.3, "grossMarginPctNov": 27.5, "inventoryLossPctNov": 1.8,
+      "confidence": "high",
+      "note": "MTC, orders, NOV per store per day, contribution and gross margin come from a secondary summary (INDmoney); NOV, EBITDA, stores, AOV from BW Disrupt / Business Standard / MediaNama.",
+      "sources": ["s2", "s3", "s4", "s1"]
+    },
+    {
+      "appId": "instamart", "quarter": "Q1 FY26", "period": "Apr-Jun 2025",
+      "gov": 5660, "darkStores": 1062, "adjEbitda": -896, "contributionMarginPctGov": -4.6, "confidence": "high",
+      "sources": ["s14", "s15"]
+    },
+    {
+      "appId": "instamart", "quarter": "Q2 FY26", "period": "Jul-Sep 2025",
+      "gov": 7022, "ordersPerStorePerDay": 1025, "contributionMarginPctGov": -2.6, "confidence": "high",
+      "sources": ["s13"]
+    },
+    {
+      "appId": "instamart", "quarter": "Q4 FY26", "period": "Jan-Mar 2026",
+      "darkStores": 1143, "adjEbitda": -858, "adjRevenuePerOrder": 97, "confidence": "medium",
+      "note": "Store count derived: Q1 FY27 stores (1,171) minus 28 net additions.", "sources": ["s10", "s9"]
+    },
+    {
+      "appId": "instamart", "quarter": "Q1 FY27", "period": "Apr-Jun 2026",
+      "gov": 7907, "govGrowthYoYPct": 39.8, "nov": 5817, "novGrowthYoYPct": 38.9,
+      "darkStores": 1171, "netStoreAdditions": 28, "cities": 131, "monthlyTransactingUsersM": 14,
+      "monthlyTransactingUsersNote": "'More than 14 million' per MediaNama",
+      "adjEbitda": -778, "adjEbitdaPctGov": -9.8, "contributionMarginPctGov": -0.2, "normalisedAov": 508,
+      "adjRevenuePerOrder": 108, "storeUtilisationPct": 40, "confidence": "high",
+      "note": "Contribution margin turned breakeven in May 2026; the full-quarter figure was -0.2% of GOV. More than 4 million unprofitable users were dropped this quarter to reach breakeven. Swiggy plans about 75 new stores in Q2 FY27.",
+      "sources": ["s9", "s10", "s11", "s12"]
+    },
+    {
+      "appId": "zepto", "quarter": "Q2 FY26", "period": "Jul-Sep 2025",
+      "ordersPerDayM": 1.46, "ordersPerStorePerDay": 1433, "totalCostPerOrder": 181, "confidence": "medium",
+      "sources": ["s16"]
+    },
+    {
+      "appId": "zepto", "quarter": "Q4 FY26", "period": "Jan-Mar 2026",
+      "ordersPerDayM": 2.33, "ordersPerStorePerDay": 2140, "totalCostPerOrder": 128, "darkStores": 1139,
+      "activeDeliveryPartners": 286670, "confidence": "medium",
+      "note": "From Zepto's updated DRHP. Period is one quarter earlier than the latest Blinkit and Instamart data.", "sources": ["s16", "s17", "s19"]
+    },
+    {
+      "appId": "flipkart_minutes", "quarter": "Sep 2026 snapshot", "period": "Sep 2026",
+      "darkStores": 1000, "darkStoresNote": "'Over 1,000' stores", "cities": 130, "citiesNote": "120 to 130 cities reported",
+      "ordersPerDayM": 1.0, "ordersPerDayNote": "'Over 1 million' per Moneycontrol; another source says 1.1 to 1.2 million",
+      "ordersPerStorePerDay": "800-1000", "ordersPerStorePerDayNote": "UBS estimate, network average",
+      "targetDarkStoresEnd2026": 1500, "orderGrowthYoYx": 5, "tier2And3OrderGrowthYoYx": 42,
+      "confidence": "medium",
+      "note": "No financials disclosed. Figures are company statements or analyst and press estimates. Marked as estimates in the UI.",
+      "sources": ["s20", "s21", "s22", "s23"]
+    }
+  ],
+  "annual": [
+    {
+      "appId": "zepto", "fiscalYear": "FY26 (Apr 2025-Mar 2026)",
+      "revenueFromOperations": 22624, "netLoss": 5905, "avgDailyOrdersLakh": 17.5, "ordersM_approx": 640,
+      "annualTransactingUsersM": 48, "darkStoresAtYearEnd": 1139, "confidence": "medium",
+      "note": "From Zepto's DRHP (8 June 2026). Revenue and loss also converted from Rs million in secondary analysis. IPO status: DRHP live with SEBI.",
+      "sources": ["s16", "s17", "s18", "s19"]
+    }
+  ],
+  "sources": [
+    { "id": "s1", "title": "7 key takeaways from Eternal Q1 FY27 earnings call", "publisher": "MediaNama", "date": "2026-07-24", "url": "https://www.medianama.com/2026/07/223-takeaways-eternal-q1-fy27-earnings-call/" },
+    { "id": "s2", "title": "Blinkit Q1 revenue jumps to Rs 15,664 Cr, EBITDA improves for fifth straight quarter", "publisher": "BW Disrupt", "date": "2026-07-22", "url": "https://www.bwdisrupt.com/article/blinkit-q1-revenue-jumps-to-rs-15-664-cr-ebitda-improves-for-fifth-straight-quarter-616041" },
+    { "id": "s3", "title": "Strong Q1 FY27 for Eternal, market share gains likely for Blinkit", "publisher": "Business Standard", "date": "2026-07-23", "url": "https://www.business-standard.com/amp/markets/news/strong-q1-fy27-for-eternal-market-share-gains-ahead-for-blinkit-126072301405_1.html" },
+    { "id": "s4", "title": "Eternal Q1 results: Blinkit's turnaround powers strong earnings growth", "publisher": "INDmoney", "date": "2026-07-22", "url": "https://www.indmoney.com/blog/stocks/eternal-results-blinkit-strongest-quarter" },
+    { "id": "s5", "title": "Eternal Q1FY26 results: Profit takes 90% hit on quick commerce push", "publisher": "Business Standard", "date": "2025-07-21", "url": "https://www.business-standard.com/companies/news/zomatos-parent-eternal-net-profit-falls-90-yoy-125072101198_1.html" },
+    { "id": "s6", "title": "Blinkit in 2026: revenue, market share, profitability", "publisher": "Quash", "date": "2026-08-10", "url": "https://quashbugs.com/blog/blinkit-surpasses-zomato-in-quick-commerce" },
+    { "id": "s7", "title": "Eternal's reality check: Blinkit's thin margins and District's losses", "publisher": "Entrackr", "date": "2026-04-29", "url": "https://entrackr.com/analysis/eternals-reality-check-blinkits-thin-margins-and-districts-losses-11777148" },
+    { "id": "s8", "title": "Eternal Q3FY26 result", "publisher": "Abhinav Mishra (Substack)", "date": "2026-02", "url": "https://abhinavmishra.substack.com/p/eternal-q3fy26-result" },
+    { "id": "s9", "title": "Swiggy to add around 75 Instamart dark stores in Q2 FY27", "publisher": "BW Disrupt", "date": "2026-07-30", "url": "https://www.bwdisrupt.com/article/swiggy-to-add-around-75-instamart-dark-stores-in-q2-fy27-amid-rising-demand-617350" },
+    { "id": "s10", "title": "Swiggy's Instamart hits contribution margin breakeven in Q1 FY27", "publisher": "Inc42", "date": "2026-07-30", "url": "https://inc42.com/buzz/swiggys-instamart-hits-contribution-margin-breakeven-in-q1-fy27/" },
+    { "id": "s11", "title": "Swiggy earnings call key takeaways", "publisher": "MediaNama", "date": "2026-08-07", "url": "https://www.medianama.com/2026/08/223-swiggy-earnings-call-key-takeaways/" },
+    { "id": "s12", "title": "Swiggy losses narrow to Rs 791 Cr; revenue up 37% in Q1 FY27", "publisher": "YourStory", "date": "2026-07-31", "url": "https://yourstory.com/2026/07/swiggy-losses-down-34-as-revenues-rise-37-in-q1-of-fy27" },
+    { "id": "s13", "title": "Swiggy Q2 FY26 shareholder letter", "publisher": "Swiggy (primary)", "date": "2025-10-30", "url": "https://www.swiggy.com/corporate/wp-content/uploads/2025/10/Q2-FY2026-Shareholder-letter.pdf" },
+    { "id": "s14", "title": "Swiggy Q1 FY26 results: margins, revenue, Instamart", "publisher": "Business Standard", "date": "2025-08-21", "url": "https://www.business-standard.com/amp/markets/news/swiggy-q1-fy26-results-margins-revenue-instamart-food-delivery-125082101272_1.html" },
+    { "id": "s15", "title": "Swiggy Q1 FY26 results: loss, expenses, revenue", "publisher": "Business Standard", "date": "2025-07-31", "url": "https://www.business-standard.com/companies/quarterly-results/swiggy-q1-fy26-results-loss-expenses-revenue-instamart-earnings-125073101438_1.html" },
+    { "id": "s16", "title": "Zepto files updated IPO papers; plans Rs 9,500 crore listing", "publisher": "Kotak Neo", "date": "2026-06-24", "url": "https://www.kotakneo.com/news/market-news/zepto-ipo-updated-drhp-sebi-8010-crore-fresh-issue-july-2026/" },
+    { "id": "s17", "title": "Zepto Limited files DRHP for IPO on MainBoard", "publisher": "IPO Platform", "date": "2026-06-10", "url": "https://www.ipoplatform.com/Funding-news/zepto-limited" },
+    { "id": "s18", "title": "Zepto IPO 2026: DRHP analysis, valuation and key risks", "publisher": "Amquest Education", "date": "2026-07-17", "url": "https://amquesteducation.com/research/zepto-ipo/" },
+    { "id": "s19", "title": "Zepto doubled its revenue. And investors halved its price.", "publisher": "Unlisted Zone", "date": "2026-09", "url": "https://unlistedzone.com/zepto-fy26-loss-ad-revenue-ipo-paused" },
+    { "id": "s20", "title": "Flipkart Minutes races past Instamart in dark stores: CLSA", "publisher": "Storyboard18", "date": "2026-08", "url": "https://www.storyboard18.com/amp/digital/flipkart-minutes-overtakes-swiggy-instamart-in-dark-stores-ws-l-108835.htm" },
+    { "id": "s21", "title": "Flipkart Minutes overtakes Instamart's dark-store count in top 10 cities", "publisher": "NewsBytes (citing Moneycontrol)", "date": "2026-08", "url": "https://www.newsbytesapp.com/news/business/flipkart-s-minutes-outpaces-instamart-in-dark-store-count-across-top-cities/story" },
+    { "id": "s22", "title": "Flipkart Minutes reaches 1,000 dark stores across India", "publisher": "RetailNews Asia (citing UBS)", "date": "2026-09-06", "url": "https://retailnews.asia/flipkart-minutes-reaches-1000-dark-stores-across-india" },
+    { "id": "s23", "title": "Flipkart Minutes tops 1,000 dark stores as it tests standalone app", "publisher": "RetailIntel (citing Financial Express)", "date": "2026-09-18", "url": "https://retailintel.in/signal/flipkart-minutes-tops-1-000-dark-stores-as-it-tests-standalo-a8a93777" },
+    { "id": "s24", "title": "Eternal Q1FY26 results: Blinkit GOV, NOV and stores", "publisher": "Business Standard", "date": "2025-07-22", "url": "https://www.business-standard.com/markets/news/eternal-share-price-zomato-blinkit-q1-results-pat-revenue-gov-nov-margins-ebitda-125072200142_1.html" }
+  ]
+}
