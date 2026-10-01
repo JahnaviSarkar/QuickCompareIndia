@@ -110,15 +110,7 @@ export default async function SourcesPage() {
           </div>
         </div>
 
-        <div className="max-w-3xl">
-          <h2 className="text-xl font-bold mb-4">How to update the data</h2>
-          <div className="  p-6 rounded-lg text-sm text-slate-700  space-y-3 font-mono">
-            <p>1. Open the <code className="  px-1 py-0.5 rounded">data/</code> directory in the repository.</p>
-            <p>2. Edit <code className="  px-1 py-0.5 rounded">company-metrics.json</code> to add a new quarterly or annual block.</p>
-            <p>3. Add any new source URLs to the <code className="  px-1 py-0.5 rounded">sources</code> array.</p>
-            <p>4. The UI automatically recalculates all charts, leaderboard scores, and derived metrics.</p>
-          </div>
-        </div>
+
       </main>
     </div>
   );

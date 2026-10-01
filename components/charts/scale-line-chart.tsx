@@ -13,7 +13,12 @@ type ScaleLineChartProps = {
 
 export function ScaleLineChart({ data, apps, metric }: ScaleLineChartProps) {
   // Get all unique quarters
-  const quarters = Array.from(new Set(data.map(d => d.quarter))).sort();
+  const parseQuarter = (q: string) => {
+    if (q.includes('Sep 2026')) return 'FY27 Q1.5';
+    const parts = q.split(' ');
+    return parts.length === 2 ? `${parts[1]} ${parts[0]}` : q;
+  };
+  const quarters = Array.from(new Set(data.map(d => d.quarter))).sort((a, b) => parseQuarter(a).localeCompare(parseQuarter(b)));
   
   // Format data for Recharts
   const chartData = quarters.map(q => {

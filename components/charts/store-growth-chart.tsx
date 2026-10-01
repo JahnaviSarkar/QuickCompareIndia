@@ -11,7 +11,12 @@ type StoreGrowthChartProps = {
 };
 
 export function StoreGrowthChart({ data, apps }: StoreGrowthChartProps) {
-  const quarters = Array.from(new Set(data.filter(d => d.darkStores != null).map(d => d.quarter))).sort();
+  const parseQuarter = (q: string) => {
+    if (q.includes('Sep 2026')) return 'FY27 Q1.5';
+    const parts = q.split(' ');
+    return parts.length === 2 ? `${parts[1]} ${parts[0]}` : q;
+  };
+  const quarters = Array.from(new Set(data.filter(d => d.darkStores != null).map(d => d.quarter))).sort((a, b) => parseQuarter(a).localeCompare(parseQuarter(b)));
   
   const chartData = quarters.map(q => {
     const dataPoint: any = { quarter: q };
